@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<!-- saved from url=(0073)file:///C:/Users/COMPUTADORA/Downloads/deepseek_html_20260321_9c489d.html -->
-<html lang="es" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="es">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-<title>Trading Serio | El curso que transforma tu mente y tus finanzas</title>
-<meta name="description" content="Método humano y profesional. Aprende a dominar tus emociones y el mercado. Más de 2000 alumnos ya cambiaron su vida.">
-<!-- Preconnect para velocidad extrema -->
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="./Trading Serio _ El curso que transforma tu mente y tus finanzas_files/css2" rel="stylesheet">
-<link rel="stylesheet" href="./Trading Serio _ El curso que transforma tu mente y tus finanzas_files/all.min.css">
+<title>Trading Serio | Transforma tu mente y tus finanzas con método humano</title>
+<meta name="description" content="Aprende trading con método emocional y estratégico. Más de 2000 alumnos ya cambiaron su vida. Garantía 7 días.">
+<!-- Open Graph para redes sociales -->
+<meta property="og:title" content="Trading Serio - El curso que transforma vidas">
+<meta property="og:description" content="Método humano + estrategias profesionales. ¡Más de 2000 alumnos!">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
   * {
     margin: 0;
@@ -25,23 +28,15 @@
     line-height: 1.5;
   }
 
-  /* ========== DISEÑO 100% MOBILE FIRST ========== */
   .container {
     width: 100%;
     max-width: 100%;
     padding: 0 20px;
   }
 
-  /* Animaciones suaves */
   @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   @keyframes pulse {
@@ -54,11 +49,11 @@
     50% { transform: translateY(-10px); }
   }
 
-  .animate {
-    animation: fadeInUp 0.6s ease forwards;
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(230,126,34,0.3); }
+    50% { box-shadow: 0 0 25px rgba(230,126,34,0.6); }
   }
 
-  /* ========== NAVBAR SIMPLE ========== */
   .navbar {
     background: rgba(255, 251, 245, 0.98);
     backdrop-filter: blur(10px);
@@ -92,9 +87,9 @@
     border-radius: 40px;
     font-size: 0.7rem;
     font-weight: 600;
+    animation: glow 2s infinite;
   }
 
-  /* ========== HERO - EFECTO WOW INMEDIATO ========== */
   .hero {
     margin-top: 70px;
     background: linear-gradient(135deg, #FFF2E6 0%, #FFE9D9 100%);
@@ -105,7 +100,7 @@
   }
 
   .hero::before {
-    content: "📈";
+    content: "📈💰❤️";
     position: absolute;
     font-size: 120px;
     opacity: 0.03;
@@ -118,11 +113,12 @@
     background: #e67e22;
     color: white;
     display: inline-block;
-    padding: 6px 16px;
+    padding: 8px 20px;
     border-radius: 40px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 600;
     margin-bottom: 24px;
+    animation: pulse 2s infinite;
   }
 
   .hero h1 {
@@ -169,7 +165,6 @@
     color: #6b7a6b;
   }
 
-  /* ========== TARJETA PRODUCTO - ESTILO AMAZON PERFECTO ========== */
   .product-card {
     background: white;
     margin: -30px 20px 30px;
@@ -247,6 +242,17 @@
     border-radius: 24px;
     margin: 20px 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .price-box::before {
+    content: "🔥";
+    position: absolute;
+    font-size: 60px;
+    opacity: 0.1;
+    right: -20px;
+    bottom: -20px;
   }
 
   .old-price {
@@ -278,6 +284,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    animation: glow 2s infinite;
   }
 
   .btn-comprar:active {
@@ -298,6 +305,12 @@
     gap: 10px;
     font-weight: 600;
     margin-top: 12px;
+    transition: all 0.3s;
+  }
+
+  .btn-wa:hover {
+    background: #20b859;
+    transform: scale(1.02);
   }
 
   .payment-methods {
@@ -310,7 +323,6 @@
     flex-wrap: wrap;
   }
 
-  /* ========== URGENCIA EMOCIONAL ========== */
   .urgency {
     background: linear-gradient(135deg, #ff9a3c, #ff6b2c);
     margin: 20px;
@@ -328,7 +340,6 @@
     font-family: monospace;
   }
 
-  /* ========== TESTIMONIOS REALES ========== */
   .testimonials {
     padding: 40px 20px;
     background: #FFFBF5;
@@ -349,6 +360,12 @@
     margin-bottom: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     border: 1px solid #ffe0c4;
+    transition: all 0.3s;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
 
   .testimonial-card i {
@@ -368,7 +385,6 @@
     color: #e67e22;
   }
 
-  /* ========== GARANTÍA ========== */
   .garantia {
     background: white;
     margin: 20px;
@@ -376,6 +392,12 @@
     border-radius: 32px;
     text-align: center;
     border: 2px solid #ffe0c4;
+    transition: all 0.3s;
+  }
+
+  .garantia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
 
   .garantia i {
@@ -384,7 +406,6 @@
     margin-bottom: 16px;
   }
 
-  /* ========== FINAL CTA ========== */
   .final-cta {
     background: linear-gradient(135deg, #FFF2E6, #FFE9D9);
     margin: 20px;
@@ -393,7 +414,6 @@
     text-align: center;
   }
 
-  /* ========== FOOTER ========== */
   footer {
     background: #1e2f2a;
     color: #d4cfc0;
@@ -402,7 +422,30 @@
     font-size: 0.8rem;
   }
 
-  /* ========== AJUSTES PARA CELULAR ========== */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-decoration: none;
+    transition: all 0.3s;
+    animation: pulse 2s infinite;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+
   @media (max-width: 480px) {
     .hero h1 { font-size: 1.8rem; }
     .current-price { font-size: 2.2rem; }
@@ -411,22 +454,20 @@
     .stats { gap: 20px; }
   }
 </style>
-<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Trading Serio _ El curso que transforma tu mente y tus finanzas_files/m=el_main_css"></head>
+</head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-content">
     <div class="logo">
       <h2>TRADING SERIO</h2>
     </div>
     <div class="badge">
-      <i class="fas fa-check-circle"></i><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Más de 2000 estudiantes
-    </font></font></div>
+      <i class="fas fa-check-circle"></i> +2000 alumnos
+    </div>
   </div>
 </nav>
 
-<!-- HERO - EFECTO WOW INMEDIATO -->
 <section class="hero">
   <div class="container">
     <div class="hero-badge">
@@ -435,14 +476,13 @@
     <h1>Deja de <span>perder dinero</span> <br>y empieza a <span>vivir del trading</span></h1>
     <p>No es un curso más. Es la transformación emocional que estabas esperando para dominar el mercado y tus emociones.</p>
     <div class="stats">
-      <div class="stat"><div class="stat-number"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">98%</font></font></div><div class="stat-label">satisfacción</div></div>
-      <div class="stat"><div class="stat-number"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">+2000</font></font></div><div class="stat-label"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">estudiantes</font></font></div></div>
-      <div class="stat"><div class="stat-number"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">2,8 millones de dólares</font></font></div><div class="stat-label">ganancias</div></div>
+      <div class="stat"><div class="stat-number">98%</div><div class="stat-label">satisfacción</div></div>
+      <div class="stat"><div class="stat-number">+2000</div><div class="stat-label">alumnos</div></div>
+      <div class="stat"><div class="stat-number">$2.8M</div><div class="stat-label">ganancias</div></div>
     </div>
   </div>
 </section>
 
-<!-- TARJETA PRODUCTO - ESTILO AMAZON -->
 <div class="product-card">
   <div class="product-image">
     <i class="fas fa-chart-line"></i>
@@ -451,7 +491,7 @@
     <p>Mente + Estrategia = Libertad Financiera</p>
   </div>
   <div class="product-info">
-    <h2 class="product-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Curso completo de trading profesional</font></font></h2>
+    <h2 class="product-title">Curso Completo Trading Profesional</h2>
     <div class="rating">
       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
       <span>4.98 · 950+ reseñas</span>
@@ -466,79 +506,77 @@
     </ul>
     
     <div class="price-box">
-      <span class="old-price"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">$997 USD</font></font></span>
-      <div class="current-price"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">$197 USD</font></font></div>
+      <span class="old-price">$997 USD</span>
+      <div class="current-price">$197 USD</div>
       <div style="font-size: 0.8rem;">🔥 Oferta especial · 80% OFF</div>
     </div>
     
     <button class="btn-comprar" id="comprarBtn">
-      <i class="fas fa-lock"></i> COMPRAR AHORA
+      <i class="fas fa-lock"></i> COMPRAR AHORA - ACCESO INMEDIATO
     </button>
     
-    <a href="https://wa.me/51999999999?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Trading%20Serio" class="btn-wa" target="_blank">
+    <!-- BOTÓN WHATSAPP CON TU NÚMERO +51916957290 -->
+    <a href="https://wa.me/51916957290?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Trading%20Serio%20y%20quiero%20más%20información" class="btn-wa" target="_blank">
       <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
     </a>
     
     <div class="payment-methods">
-      <span><i class="fab fa-cc-visa"></i><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Visa</font></font></span>
-      <span><i class="fab fa-cc-mastercard"></i><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Tarjeta MasterCard</font></font></span>
-      <span><i class="fab fa-cc-amex"></i><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Amex</font></font></span>
-      <span><i class="fab fa-paypal"></i><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">PayPal</font></font></span>
+      <span><i class="fab fa-cc-visa"></i> Visa</span>
+      <span><i class="fab fa-cc-mastercard"></i> Mastercard</span>
+      <span><i class="fab fa-cc-amex"></i> Amex</span>
+      <span><i class="fab fa-paypal"></i> PayPal</span>
       <span><i class="fas fa-mobile-alt"></i> Mercado Pago</span>
+      <span><i class="fas fa-credit-card"></i> Hotmart</span>
     </div>
     <div style="text-align: center; margin-top: 16px; font-size: 0.7rem;">
-      <i class="fas fa-shield-alt"></i> Pago 100% seguro · Acceso inmediato
+      <i class="fas fa-shield-alt"></i> Pago 100% seguro por Hotmart · Acceso inmediato
     </div>
   </div>
 </div>
 
-<!-- URGENCIA EMOCIONAL -->
 <div class="urgency">
   <i class="fas fa-fire" style="font-size: 1.8rem;"></i>
   <h3 style="margin: 8px 0;">⚠️ SOLO HOY - CUPOS LIMITADOS ⚠️</h3>
   <p>Oferta termina en:</p>
-  <div class="countdown" id="countdown">23:22:14</div>
+  <div class="countdown" id="countdown">23:59:59</div>
   <p style="margin-top: 12px; font-size: 0.8rem;">Quedan 47 cupos con mentoría personalizada</p>
 </div>
 
-<!-- TESTIMONIOS QUE GENERAN CONFIANZA -->
 <div class="testimonials">
   <h2 class="section-title">Lo que dicen <span style="color: #e67e22;">mis alumnos</span> ❤️</h2>
   
-  <div class="testimonial-card" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+  <div class="testimonial-card">
     <i class="fas fa-quote-left"></i>
     <p>"Nunca entendía por qué perdía dinero hasta que entendí mi mente. Este curso me salvó de dejar el trading. Ahora vivo de esto."</p>
     <h4>— Carlos Rodríguez</h4>
     <div style="font-size: 0.8rem; color: #e67e22;">+342% en 6 meses</div>
   </div>
   
-  <div class="testimonial-card" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+  <div class="testimonial-card">
     <i class="fas fa-quote-left"></i>
     <p>"La parte emocional es lo que marca la diferencia. Después de años probando cursos, este fue el único que realmente funcionó."</p>
     <h4>— Valentina Méndez</h4>
     <div style="font-size: 0.8rem; color: #e67e22;">Consistencia mensual</div>
   </div>
   
-  <div class="testimonial-card" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+  <div class="testimonial-card">
     <i class="fas fa-quote-left"></i>
     <p>"La comunidad es increíble. Te sientes acompañado, no estás solo. Los mentores realmente se preocupan por tu éxito."</p>
-    <h4><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">— Javier Campos</font></font></h4>
+    <h4>— Javier Campos</h4>
     <div style="font-size: 0.8rem; color: #e67e22;">Alumno desde 2024</div>
   </div>
 </div>
 
-<!-- GARANTÍA ABSOLUTA -->
-<div class="garantia" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+<div class="garantia">
   <i class="fas fa-medal"></i>
   <h3 style="margin-bottom: 12px;">Garantía "Reyes del Amazon"</h3>
   <p>Si en los primeros 7 días sientes que este curso no transformó tu forma de operar, te devolvemos el 100% de tu inversión. Sin preguntas, sin letras chicas.</p>
   <div style="margin-top: 16px;">
-    <i class="fas fa-shield-alt"></i><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Compra 100% segura
-  </font></font></div>
+    <i class="fas fa-shield-alt"></i> Compra 100% segura por Hotmart
+  </div>
 </div>
 
-<!-- FINAL CTA EMOCIONAL -->
-<div class="final-cta" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+<div class="final-cta">
   <i class="fas fa-heart" style="font-size: 2.5rem; color: #e67e22;"></i>
   <h2 style="margin: 16px 0;">¿Listo para transformar tu vida?</h2>
   <p>El momento es ahora. Miles ya están viviendo la libertad financiera que tú también mereces.</p>
@@ -549,12 +587,16 @@
 
 <footer>
   <p><i class="fas fa-chart-line"></i> TRADING SERIO – Método humano que transforma vidas</p>
-  <p style="margin-top: 12px;">© 2026 · Todos los derechos reservados · Soporte 24/7</p>
+  <p style="margin-top: 12px;">© 2026 · Todos los derechos reservados · Soporte 24/7 vía WhatsApp</p>
   <p style="font-size: 0.7rem; margin-top: 12px;">*Resultados pueden variar según dedicación individual.</p>
 </footer>
 
+<!-- WHATSAPP FLOTANTE CON TU NÚMERO +51916957290 -->
+<a href="https://wa.me/51916957290?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Trading%20Serio" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
 <script>
-  // Contador regresivo
   function startCountdown() {
     let endTime = localStorage.getItem('tradingSerioEnd');
     const now = new Date().getTime();
@@ -568,7 +610,7 @@
       const current = new Date().getTime();
       const distance = parseInt(endTime) - current;
       if (distance < 0) {
-        document.getElementById('countdown').innerHTML = "00:00:00 · OFERTA FINALIZADA";
+        document.getElementById('countdown').innerHTML = "00:00:00";
         return;
       }
       const hours = Math.floor(distance / (1000 * 60 * 60));
@@ -581,19 +623,19 @@
   }
   startCountdown();
   
-  // Botones de compra - CONFIGURA TU ENLACE REAL AQUÍ
-  const TU_LINK_PAGO = "https://tu-enlace-de-pago.com/comprar"; // ¡REEMPLAZA CON TU LINK DE HOTMART/STRIPE/MERCADOPAGO!
+  // ========== CONFIGURACIÓN HOTMART ==========
+  // 🔥 REEMPLAZA CON TU ENLACE REAL DE HOTMART 🔥
+  const HOTMART_LINK = "https://pay.hotmart.com/TU_ENLACE_AQUI";
   
   function comprar() {
-    if(confirm("✅ ¡Excelente decisión! Serás redirigido al área de pago seguro. ¿Listo para transformar tu vida financiera?")) {
-      window.location.href = TU_LINK_PAGO;
+    if(confirm("✅ ¡Excelente decisión! Serás redirigido al área de pago seguro de Hotmart. ¿Listo para transformar tu vida financiera?")) {
+      window.location.href = HOTMART_LINK;
     }
   }
   
   document.getElementById('comprarBtn')?.addEventListener('click', comprar);
   document.getElementById('comprarFinalBtn')?.addEventListener('click', comprar);
   
-  // Animaciones al scroll suaves
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -609,6 +651,6 @@
     el.style.transition = 'all 0.6s ease';
     observer.observe(el);
   });
-</script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="./Trading Serio _ El curso que transforma tu mente y tus finanzas_files/24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Original text</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="file://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" src="./Trading Serio _ El curso que transforma tu mente y tus finanzas_files/saved_resource.html"></iframe></div></div></div>
-
-</body></html>
+</script>
+</body>
+</html>
